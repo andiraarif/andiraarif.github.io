@@ -1,1 +1,84 @@
-"HelloWorld" 
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>M Arif Andira</title>
+    <link rel="stylesheet" href="styles/styles.css" />
+    <link rel="stylesheet" href="styles/mediaqueries.css" />
+  </head>
+  <body>
+    <!-- Desktop Navigation -->
+    <nav id="desktop-nav">
+      <div class="logo">Arif Andira</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#blogs">Blogs</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <!-- Hamburger Navigation -->
+    <nav id="hamburger-nav">
+      <div class="logo">Arif Andira</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <ul class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#blogs" onclick="toggleMenu()">Blogs</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <!-- Profile Section -->
+    <section id="profile">
+      <div class="profile__pic-container">
+        <img
+          class="profile__pic-pic"
+          src="assets/arif.jpeg"
+          alt="Mohamad Arif Andira profile picture"
+        />
+      </div>
+      <div class="profile__info-container">
+        <p class="profile__info-greetings">Hello, I'm</p>
+        <h1 class="profile__info-name">M Arif Andira</h1>
+        <p class="profile__info-role">Software Engineer</p>
+        <div class="profile__info-btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('assets/resume-example.pdf')"
+          >
+            Download CV
+          </button>
+          <button class="btn btn-color-1" onclick="location.href='./#contact'">
+            Contact Info
+          </button>
+        </div>
+        <div class="profile__info-socials-container">
+          <a href="https://www.linkedin.com/in/andiraarif/" target="_blank">
+            <img
+              src="assets/linkedin.png"
+              alt="My linkedin profile link"
+              class="icon"
+          /></a>
+          <a href="https://github.com/andiraarif " target="_blank">
+            <img
+              src="assets/github.png"
+              alt="My GitHub profile link"
+              class="icon"
+          /></a>
+        </div>
+      </div>
+    </section>
+    <script src="scripts/script.js"></script>
+  </body>
+</html>
