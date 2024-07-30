@@ -3,82 +3,64 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>M Arif Andira</title>
     <link rel="stylesheet" href="styles/styles.css" />
-    <link rel="stylesheet" href="styles/mediaqueries.css" />
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule=""
+      src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.js"
+    ></script>
+    <title>M Arif Andira</title>
   </head>
   <body>
-    <!-- Desktop Navigation -->
-    <nav id="desktop-nav">
-      <div class="logo">Arif Andira</div>
-      <div>
-        <ul class="nav-links">
-          <li><a href="#about">About</a></li>
-          <li><a href="#experience">Experience</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#blogs">Blogs</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
+    <header class="header">
+      <div class="centered-container">
+        <nav class="main-nav">
+          <a href="./index.html" class="logo">ArifAndira</a>
+          <ul class="main-nav-list">
+            <li>
+              <a href="#" class="main-nav-link">Notes</a>
+            </li>
+            <li>
+              <a href="#" class="main-nav-link">Articles</a>
+            </li>
+            <li>
+              <a href="#" class="main-nav-link">Projects</a>
+            </li>
+            <li>
+              <a href="./about-me.html" class="main-nav-link">About Me</a>
+            </li>
+          </ul>
+          <div class="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </div>
+        </nav>
       </div>
-    </nav>
-    <!-- Hamburger Navigation -->
-    <nav id="hamburger-nav">
-      <div class="logo">Arif Andira</div>
-      <div class="hamburger-menu">
-        <div class="hamburger-icon" onclick="toggleMenu()">
-          <span></span>
-          <span></span>
-          <span></span>
+    </header>
+    <main>
+      <section class="centered-container section-after-header section-intro">
+        <div class="intro-text">
+          <h1>Hey, I'm Arif</h1>
+          <p>
+            I love to learn computational fluid dynamics and software
+            engineering.
+          </p>
+          <p>
+            On this site, I write <a href="#">personal notes</a>,
+            <a href="#">technical articles</a>, and share my
+            <a href="#">projects</a>. You can also learn more
+            <a href="./about-me.html">about me</a>.
+          </p>
         </div>
-        <ul class="menu-links">
-          <li><a href="#about" onclick="toggleMenu()">About</a></li>
-          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
-          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
-          <li><a href="#blogs" onclick="toggleMenu()">Blogs</a></li>
-          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
-        </ul>
-      </div>
-    </nav>
-    <!-- Profile Section -->
-    <section id="profile">
-      <div class="profile__pic-container">
-        <img
-          class="profile__pic-pic"
-          src="assets/arif.jpeg"
-          alt="Mohamad Arif Andira profile picture"
-        />
-      </div>
-      <div class="profile__info-container">
-        <p class="profile__info-greetings">Hello, I'm</p>
-        <h1 class="profile__info-name">M Arif Andira</h1>
-        <p class="profile__info-role">Software Engineer</p>
-        <div class="profile__info-btn-container">
-          <button
-            class="btn btn-color-2"
-            onclick="window.open('assets/resume-example.pdf')"
-          >
-            Download CV
-          </button>
-          <button class="btn btn-color-1" onclick="location.href='./#contact'">
-            Contact Info
-          </button>
+        <div class="intro-image">
+          <img class="profile-image" src="assets/arif.jpeg" alt="" />
         </div>
-        <div class="profile__info-socials-container">
-          <a href="https://www.linkedin.com/in/andiraarif/" target="_blank">
-            <img
-              src="assets/linkedin.png"
-              alt="My linkedin profile link"
-              class="icon"
-          /></a>
-          <a href="https://github.com/andiraarif " target="_blank">
-            <img
-              src="assets/github.png"
-              alt="My GitHub profile link"
-              class="icon"
-          /></a>
-        </div>
-      </div>
-    </section>
+      </section>
+    </main>
     <script src="scripts/script.js"></script>
   </body>
 </html>
